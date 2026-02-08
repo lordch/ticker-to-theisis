@@ -135,3 +135,44 @@
 10. **#38** - CPK 2026 tender plan (40 bln PLN)
 11. **#39** - PKP PLK 2026 investment plan (9.5 bln PLN)
 12. **#23** - GDDKiA 2026 tender plan (12 bln PLN)
+
+---
+
+## Source Collection Results (2026-02-08)
+
+**Total collected:** 32 of 42 sources (76%)
+**Failed:** 10 sources
+
+### Collection Summary by Value Rating
+
+| Value | Total | Collected | Failed | Success Rate |
+|-------|-------|-----------|--------|-------------|
+| 5 | 12 | 8 | 4 | 67% |
+| 4 | 14 | 13 | 1 | 93% |
+| 3 | 16 | 11 | 5 | 69% |
+| **Total** | **42** | **32** | **10** | **76%** |
+
+## Failed Sources
+
+| # | URL | Title | Value | Reason | Addresses Questions |
+|---|-----|-------|-------|--------|--------------------:|
+| 1 | https://budimex.pl/app/uploads/2025/10/Budimex_Inwestorska_Q325_PL_final.pdf | Prezentacja inwestorska za III kwartal 2025 | 5 | PDF binary not extractable via WebFetch (image-based/compressed PDF) | Q1, Q2, Q3, Q4, Q8 |
+| 2 | https://budimex.pl/app/uploads/2025/07/Budimex_Inwestorska_H125_draft_final.pdf | Prezentacja inwestorska za 1 polrocze 2025 | 5 | PDF binary not extractable via WebFetch (image-based/compressed PDF) | Q1, Q2, Q3, Q4, Q8 |
+| 3 | https://budimex.pl/app/uploads/2025/05/Budimex_Inwestorska_IQ25_final_v3.pdf | Prezentacja inwestorska za I kwartal 2025 | 4 | PDF binary not extractable via WebFetch (image-based/compressed PDF) | Q1, Q2, Q3 |
+| 12 | https://www.budimex.pl/repository/about/walne/2024/2023_Grupa_Budimex_Budimex_SA_Sprawozdanie_z_dzialalnosci.pdf | Sprawozdanie z dzialalnosci Grupy Budimex za rok 2023 | 5 | PDF binary not extractable via WebFetch (44-page Word-generated PDF) | Q1, Q2, Q3, Q4, Q10, Q16 |
+| 17 | https://www.pwc.pl/pl/artykuly/ranking-najwiekszych-firm-budowlanych-w-polsce-build-the-future.html | Ranking firm budowlanych "Build The Future" - PwC | 4 | Landing page only; actual ranking data in separate PDFs behind download links | Q5 |
+| 22 | https://www.scoperatings.com/ratings-and-research/research/EN/175012 | European construction: healthy backlog, thin margins - Scope Ratings | 3 | HTTP 502 - server error | Q3, Q7 |
+| 28 | https://www.rp.pl/budownictwo/art42763091-artur-popko-prezes-budimeksu-ciemne-chmury-nad-rynkiem-budowlanym-branza-apeluje | Artur Popko: Ciemne chmury nad rynkiem budowlanym | 4 | JS-rendered/paywall - no article content extractable | Q12, Q16, Q19 |
+| 31 | https://static-iai.ferrovial.com/wp-content/uploads/sites/13/2025/03/03192626/ferrovial-integrated-annual-report-2024.pdf | Ferrovial Integrated Annual Report 2024 (PDF) | 5 | HTTP 403 Forbidden | Q11, Q1 |
+| 32 | https://informeanualintegrado2024.ferrovial.com/en/.../construction/ | Ferrovial 2024 Annual Report - Construction Division | 4 | HTTP 403 Forbidden | Q11, Q1 |
+| 37 | https://gowork.uk/reviews | Opinie Budimex - GoWork (912 opinii) | 3 | Wrong URL (UK site); Polish GoWork Budimex page not accessible | Q12 |
+
+### Notes on Failed Sources
+
+**PDF sources (#1, #2, #3, #12):** These are image-based/compressed investor presentations and annual reports. WebFetch cannot extract text from these binary PDFs. They need to be downloaded and processed with OCR/PDF text extraction tools locally. These are HIGH PRIORITY gaps as they contain segment-level financial data not available elsewhere.
+
+**Ferrovial sources (#31, #32):** Both Ferrovial annual report sources returned 403 Forbidden. The Ferrovial corporate page (#30) was successfully fetched with basic info. Consider using Ferrovial's IR contact or Bloomberg for Construction division data.
+
+**Paywall sources (#28):** Rzeczpospolita articles require subscription. The CEO interview content is partially covered by other sources (#26, #27, #41).
+
+**PwC ranking (#17):** The landing page was fetched but actual ranking data requires downloading separate PDF reports from the page.
