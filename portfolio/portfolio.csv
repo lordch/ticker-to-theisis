@@ -1,0 +1,12 @@
+konto,instrument,ticker,typ,ilosc,cena_zakupu,wartosc_rynkowa,zysk_pln,zysk_pct,fair_value,target_price,hard_stop,notatki
+IKZE,Nasdaq-100 PLN-Hedged,,ETF,20.7555,239.75,4938.77,-37.36,-0.75,,,,"US large-cap tech, hedging walutowy PLN/USD"
+IKZE,S&P 500 PLN-Hedged,,ETF,41.2813,120.70,4955.41,-27.24,-0.55,,,,"US broad market, hedging walutowy PLN/USD"
+IKZE,Semiconductor VanEck,,ETF,19.7279,59.652,5032.31,42.00,0.84,,,,"Sektorowy zakład na półprzewodniki"
+IKZE,GOTÓWKA,,cash,1,,2006.91,,,,,,"Wolne środki IKZE"
+IKE,Obligacji 6M,,ETF,19,144.45,2745.88,1.26,0.05,,,,"Bezpieczna poduszka, obligacje krótkoterminowe"
+IKE,S&P500 HealthCareSec iShares,,ETF,75.1656,12.451,3306.56,-24.71,-0.74,,,,"US healthcare sector"
+IKE,mWIG40TR,,ETF,83,144.21,11943.70,-25.46,-0.21,,,,"Polskie średnie spółki"
+IKE,sWIG80TR,,ETF,20,495.52,9873.00,-37.30,-0.38,,,,"Polskie małe spółki"
+IKE,GOTÓWKA,,cash,1,,304.65,,,,,,"Wolne środki IKE"
+zwykle,Neuca,NEU.PL,akcje,11,784.09,8525.00,-100.00,-1.16,920-960,920,630,"LONG, fosa regulacyjna AdA, opcjonalność Synoptis/Humaneva"
+zwykle,GOTÓWKA,,cash,1,,9159.00,,,,,,"Wolne środki na nowe pozycje"
